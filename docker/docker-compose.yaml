@@ -12,8 +12,6 @@ services:
       - MYSQL_DATABASE=tduck
       - MYSQL_ROOT_HOST=%
       - TZ=Asia/Shanghai
-    ports:
-      - "3306:3306"
     volumes:
       - mysql-volume:/var/lib/mysql
       - ./init-db:/docker-entrypoint-initdb.d
